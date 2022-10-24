@@ -1,0 +1,93 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center, 
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {margin: 0;padding: 0;border: 0;font-size: 100%;font: inherit;vertical-align: baseline;}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {display: block;}
+body {line-height: 1;}
+ol, ul {list-style: none;}
+blockquote, q {quotes: none;}
+blockquote:before, blockquote:after,
+q:before, q:after {content: '';content: none;}
+table {border-collapse: collapse;border-spacing: 0;}
+
+html {font-size:16px;}
+
+/* 질환별 명의 리스트 */
+.famous_wrap {font-family:'Noto Sans KR', sans-serif;font-size: 16px;margin:10px 18px 0 18px;}
+.famous_place_item {padding-bottom: 0px;}
+.famous_place_item a {font-family:'Noto Sans KR', sans-serif;font-size: 15px; text-decoration: none;color:#414141;letter-spacing: -1px;}
+.famous_place_item a:link { color: #444; } /* 기본 상태 */
+.famous_place_item a:visited { color: #444; } /* 이미 링크 방문한 상태 */
+.famous_place_item a:hover { color: #222; } /* 마우스 올려져 있을때 */
+.famous_place_item a:active { color: #222; } /* 마우스로 클릭할떄 */ 
+.famous_place_item .famous_place_text { margin:0px;font-size: 16px;font-weight:bold;color:#444;   border-bottom:1px solid #d8d8d8;padding:15px 0 15px;}
+.famous_place_item .famous_place_text {display: flex;justify-content: space-between;}
+.famous_place_item .famous_place_badge {margin-left: auto; margin-top:2px;margin-left:10px;}
+.famous_place_item .famous_place_more .btn_more {margin:0 0px 0 10px;color:999;}
+.famous_place_item .famous_place_tit {margin-bottom:0px;color:#444;font-weight:bold;}
+.famous_place_item .famous_place_tit span {margin-left:10px;}
+.famous_place_item .famous_place_tit .light {color:#777; font-weight: 500;}
+.famous_place_item .famous_place_tit span:first-child {margin-left:0px;}
+.famous_place_item .famous_place_badge {display: inline-block; line-height: 1;text-align: center;white-space: nowrap;vertical-align: baseline; border-radius: 0.25rem;}
+.famous_place_item .famous_place_badge .badge_outline {font-size: 12px; line-height: 1.5; font-weight:bold;padding:1px 10px 3px; background-color: #fff; border:1px solid #e1e1e1; border-radius: 10rem;}
+.famous_place_item .famous_place_badge .badge_primary {font-size: 12px; line-height: 1.5; font-weight:bold;padding:1px 10px 3px; background-color: #f4f4f4; border:1px solid #f4f4f4; border-radius: 10rem;}
+.famous_banner {display: flex;flex-wrap:wrap;justify-content : space-between; height:100px;border-radius:14px; background-color:#3B52EE;}
+.famous_banner .title_wrap {font-family:'Noto Sans KR', sans-serif;font-size:1.250rem;font-weight:700;color:#fff;line-height:1.5;letter-spacing:-2px;vertical-align: baseline;padding:20px 0 0 40px;}
+.famous_banner .title_wrap2 { display: flex;align-items:center;width:100px;font-family:'Noto Sans KR', sans-serif;font-size:1.250rem;font-weight:700;color:#fff;line-height:1.5;letter-spacing:-2px;padding:0px 0 0 40px;}
+.famous_banner .title_wrap .tx_color {font-size:1.125rem; color:#ff8851;font-weight:600;}
+.famous_banner .famous_visual {display: flex;align-items: flex-end;  margin-right:10%;}
+.famous_notice {background-color:#fafafa; height:38px;border-radius:10px; margin:10px 0 20px;}
+.famous_notice .notice_txt {width:100%;font-family:'Noto Sans KR', sans-serif;font-size:13px;font-weight:300;color:#555;line-height:35px; text-align:left; padding:0 0 0 20px;}
+.famous_category_wrap {display: flex;flex-wrap:wrap; justify-content: space-between; margin:20px 18px 20px 18px;}
+.category_items {width:25%;display: flex;flex-wrap:wrap;justify-content: center;margin:0 -10px 30px -10px;}
+.category_items a {font-family:'Noto Sans KR', sans-serif;font-size:14px;font-weight:500;color:#555;text-decoration:none}
+.category_items .item {width:30px; height:30px; border:1px solid #e8e8e8;padding:14px;border-radius:20px;box-shadow: -5px 10px 10px rgba(0, 0, 0, 0.05);}
+.category_items .item_wrap .label {text-align: center;padding-top:10px;}
+
+@media (max-width: 474px){
+    .category_items {width:33.333%;}
+    }
+    
+    @media (max-width: 350px){
+        .famous_place_item .famous_place_text {font-size: 0.875rem !important;}
+        .famous_banner .famous_visual {margin-right: 3%;}
+        .famous_banner .famous_visual img {width:90%;}
+        .famous_banner .title_wrap2 {font-size: 1rem;letter-spacing: -0.7px;padding: 0px 0 0 20px;font-weight: 500; }
+        .famous_banner {height: 90px;}
+        .famous_place_item .famous_place_tit span {margin-left: 5px;}
+        .famous_place_item .famous_place_tit .light {color:#666;font-weight: 500;letter-spacing:-0.5;}
+        .famous_notice {margin: 10px 0 10px;}
+    }
+    @media (max-width: 320px){
+        .famous_place_item .famous_place_badge .badge_outline {font-size: 0.688rem;padding: 1px 6px 3px;}
+        .famous_place_item .famous_place_badge .badge_primary {font-size: 0.688rem;padding: 1px 6px 3px;}
+        .famous_place_item .btn_more {padding: 10px 0px 0 0px;}
+        .famous_place_item .famous_place_badge {margin-left: 5px;}
+    }
+.grid-layout{display: grid;grid-template-columns: repeat(4, 1fr);gap: 15%;}
+.grid-layout .box {justify-content : space-between;}
+.grid-layout .box .items {}
+.grid-layout .box .items .icon {padding:0; border:1px #e8e8e8 solid ;}
+.grid-layout .box .items .title {margin-top:10px; line-height: 1; text-align: center; font-family:'Noto Sans KR', sans-serif; font-size: 1rem;font-weight: 800;color:#414141; letter-spacing: -0.08rem;}
+
+/* tab swiper */
+.tab {position: absolute; top: 0%;left: 0%; margin-top: 0px; margin-left: 0px; width: 100%; height: auto; background-color: #fff; overflow-x: hidden;}
+.tab-nav {position: relative;height: 40px;width: 100%; padding: 0 10px; background-color: #fff; overflow-x: hidden;}
+.tab-nav .swiper-slide {display: block; width: 50px; line-height: 40px;text-align: center;margin: 0 10px;cursor: pointer;}
+.tab-nav .swiper-slide {font-family:'Noto Sans KR', sans-serif;font-size: 15px;font-weight:700; text-decoration: none;color:#999;letter-spacing: -1px;}
+.tab-nav .swiper-slide.active {font-weight: 700;color: #444;}
+.tab-active-bar {position: absolute; bottom: 0px; left: 0; height: 4px; width: 20px; margin-left: 25px;background-color: #444; border-radius: 2px; transition-property: all;}
+.tab-content {height: 100%;}
+.tab-content .swiper-slide {color: #fff;line-height: 25px;text-align: center;cursor: pointer;height: 100%;}
+.tab-content .swiper-slide,.tab-content .swiper-slide {background-color: #fff;}
